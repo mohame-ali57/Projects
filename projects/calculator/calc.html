@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    width: 80%;
+    border-radius: 15px;
+}
+.calculator>input{
+    background-color: rgb(41, 0, 70);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    width: 95%;
+}
+.row{
+    display: flex;
+}
+.row div{
+    margin: 10px;
+    flex-grow: 2;
+}
+button{
+    padding: 15px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline: none;
+}
+.row #m{
+    background-color: rgb(41, 0, 70) ;
+}
+.row #color{
+    background-color:red;
+}
+</style>
+<body>
+    <div class="calculator">
+        <input type="number" value="0">
+        <div class="row">
+            <div class="col1"><button id="m">AC</button></div>
+            <div class="col2"><button id="m">+/</button></div>
+            <div class="col3"><button id="m">%</button></div>
+            <div class="col4"><button id="color">÷ </button></div>
+        </div>
+        <div class="row">
+            <div class="col1"><button>7</button></div>
+            <div class="col2"><button>8</button></div>
+            <div class="col3"><button>9</button></div>
+            <div class="col4"><button id="color">X </button></div>
+        </div>
+        <div class="row">
+            <div class="col1"><button>4</button></div>
+            <div class="col2"><button>5</button></div>
+            <div class="col3"><button>6</button></div>
+            <div class="col4"><button id="color">- </button></div>
+        </div>
+        <div class="row">
+            <div class="col1"><button>1</button></div>
+            <div class="col2"><button>2</button></div>
+            <div class="col3"><button>3</button></div>
+            <div class="col4"><button id="color">+ </button></div>
+        </div>
+        <div class="row">
+            <div class="col1"><button>0</button></div>
+            <div class="col2"><button>.</button></div>
+            <div class="col3"><button id="color">=</button></div>
+            <div class="col4"><button> off</button></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -96,7 +96,11 @@ h2{
     margin: 30px 0;
 }
 .creat{
+    display: block;
+    text-decoration: none;
     font-size: 40px;
     font-weight: 900;
     color: goldenrod;
+    text-align: center;
 }
+

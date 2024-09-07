@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use \Mcamara\LaravelLocalization\Traits\LoadsTranslatedCachedRoutes;
 use App\Http\Controllers\website\{MainController,ProductsController};
+use App\Http\Controllers\dashboard\DashboardMainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,18 +20,20 @@ Auth::routes();
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ], function () {
         Route::get('/', function () {
-
             return view('welcome');
         });
-
 
         Route::get('/', [App\Http\Controllers\website\MainController::class, 'home'])->name('home');
         Route::get('/about', [App\Http\Controllers\website\MainController::class, 'about'])->name('about');
         Route::get('/shop', [App\Http\Controllers\website\ProductsController::class, 'shop'])->name('shop');
         Route::get('/contact', [App\Http\Controllers\website\MainController::class, 'contact'])->name('contact');
-     //  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home_auth');
+
+         Route::prefix('dashboard')->middleware(['auth', 'dashboard'])->group(function () {
+            Route::get('/', [DashboardMainController::class, 'home'])->name('dashboard');
+        });
 
     });

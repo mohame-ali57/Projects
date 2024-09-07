@@ -29,14 +29,45 @@
                     @endguest
                   </li>
 
-                  <li>
+                  @auth
+          @if(auth()->user()->User_Type=='customer')
+          <li><a href="#" class="text-decoration-none text-danger"><span class="icon icon-heart"></span></a></li>
+          <li>
                     <a href="cart.html" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
                       <span class="count">2</span>
                     </a>
                   </li>
-                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
-                </ul>
+          @endif
+          @endauth
+
+  <a type="button" class="dropdown-toggle p-1"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="icon icon-person"></span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right" >
+    @if(auth()->user())
+    <button type="button" class="dropdown-item">
+        <i class="fa-solid fa-user pr-2"></i>Profile
+    </button>
+
+    @if(auth()->user()->User_Type=='admin' || auth()->user()->User_Type=='moderator')
+    <button type="button" class="dropdown-item" onclick="window.location.href='{{ route('dashboard') }}'">
+    <i class="fas fa-tachometer-alt pr-2"></i> Dashboard
+        </button>
+@endif
+<a class="d-block mx-auto" href="{{route('logout')}}" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    Log Out
+    <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: ">
+        @csrf
+    </form>
+</a>
+@else
+<button class="dropdown-item" type="button" onclick="window.location.href='{{route('login')}}'">Login</button>
+<button class="dropdown-item" type="button" onclick="window.location.href='{{route('register')}}'">Register</button>
+@endif
+  </div>
+        </ul>
               </div>
             </div>
 

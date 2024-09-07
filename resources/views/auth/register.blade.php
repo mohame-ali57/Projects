@@ -61,6 +61,23 @@
                             </div>
                         </div>
 
+
+
+                        <div class="row mb-3">
+                            <label for="User_Type" class="col-md-4 col-form-label text-md-end">User_Type</label>
+
+                            <div class="col-md-6">
+                                <input id="User_Type" type="text"  value="customer" class="form-control @error('User_Type') is-invalid @enderror" name="User_Type" readonly>
+
+                                @error('User_Type')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

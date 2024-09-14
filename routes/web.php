@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use \Mcamara\LaravelLocalization\Traits\LoadsTranslatedCachedRoutes;
 use App\Http\Controllers\website\{MainController,ProductsController};
-use App\Http\Controllers\dashboard\DashboardMainController;
+use App\Http\Controllers\dashboard\{DashboardMainController,CategoriesController};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,8 +32,10 @@ Route::group(
         Route::get('/contact', [App\Http\Controllers\website\MainController::class, 'contact'])->name('contact');
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home_auth');
 
-         Route::prefix('dashboard')->middleware(['auth', 'dashboard'])->group(function () {
+        Route::prefix('dashboard')->middleware(['auth', 'dashboard'])->group(function () {
             Route::get('/', [DashboardMainController::class, 'home'])->name('dashboard');
+            Route::resource('/categories',CategoriesController::class);
         });
+
 
     });

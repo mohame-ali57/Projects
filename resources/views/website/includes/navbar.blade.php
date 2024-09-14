@@ -6,13 +6,13 @@
             <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
               <form action="" class="site-block-top-search">
                 <span class="icon icon-search2"></span>
-                <input type="text" class="form-control border-0" placeholder="Search">
+                <input type="text" class="form-control border-0" placeholder="{{__('website/home.Search')}}">
               </form>
             </div>
 
             <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
               <div class="site-logo">
-                <a href="{{ route('home')}}" class="js-logo-clone">Shoppers</a>
+                <a href="{{ route('home')}}" class="js-logo-clone">{{__('website/home.Shoppers')}}</a>
               </div>
             </div>
 
@@ -47,24 +47,24 @@
   <div class="dropdown-menu dropdown-menu-right" >
     @if(auth()->user())
     <button type="button" class="dropdown-item">
-        <i class="fa-solid fa-user pr-2"></i>Profile
+        <i class="fa-solid fa-user pr-2"></i>{{__('website/home.Profile')}}
     </button>
 
     @if(auth()->user()->User_Type=='admin' || auth()->user()->User_Type=='moderator')
     <button type="button" class="dropdown-item" onclick="window.location.href='{{ route('dashboard') }}'">
-    <i class="fas fa-tachometer-alt pr-2"></i> Dashboard
+    <i class="fas fa-tachometer-alt pr-2"></i> {{__('website/home.Dashboard')}}
         </button>
 @endif
-<a class="d-block mx-auto" href="{{route('logout')}}" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">
+<a class="d-block mx-auto"  onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">
     <i class="fa-solid fa-arrow-right-from-bracket"></i>
-    Log Out
+    {{__('website/home.Log_Out')}}
     <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: ">
         @csrf
     </form>
 </a>
 @else
-<button class="dropdown-item" type="button" onclick="window.location.href='{{route('login')}}'">Login</button>
-<button class="dropdown-item" type="button" onclick="window.location.href='{{route('register')}}'">Register</button>
+<button class="dropdown-item" type="button" onclick="window.location.href='{{route('login')}}'">{{__('website/home.Login')}}</button>
+<button class="dropdown-item" type="button" onclick="window.location.href='{{route('register')}}'">{{__('website/home.Register')}}</button>
 @endif
   </div>
         </ul>
@@ -78,33 +78,33 @@
         <div class="container">
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li class="has-children">
-              <a href="{{ route('home')}}">Home</a>
+              <a href="{{ route('home')}}">{{__('website/home.Home')}}</a>
               <ul class="dropdown">
-                <li><a href="#">Menu One</a></li>
-                <li><a href="#">Menu Two</a></li>
-                <li><a href="#">Menu Three</a></li>
+                <li><a href="#">{{__('website/home.Menu_One')}}</a></li>
+                <li><a href="#">{{__('website/home.Menu_Two')}}</a></li>
+                <li><a href="#">{{__('website/home.Menu_Three')}}</a></li>
                 <li class="has-children">
-                  <a href="#">Sub Menu</a>
+                  <a href="#">{{__('website/home.Sub_Menu')}}</a>
                   <ul class="dropdown">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
+                    <li><a href="#">{{__('website/home.Menu_One')}}</a></li>
+                    <li><a href="#">{{__('website/home.Menu_Two')}}</a></li>
+                    <li><a href="#">{{__('website/home.Menu_Three')}}</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li class="has-children active">
-              <a href="{{ route('about')}}">About</a>
+              <a href="{{ route('about')}}">{{__('website/home.About')}}</a>
               <ul class="dropdown">
-                <li><a href="#">Menu One</a></li>
-                <li><a href="#">Menu Two</a></li>
-                <li><a href="#">Menu Three</a></li>
+                <li><a href="#">{{__('website/home.Menu_One')}}</a></li>
+                <li><a href="#">{{__('website/home.Menu_Two')}}</a></li>
+                <li><a href="#">{{__('website/home.Menu_Three')}}</a></li>
               </ul>
             </li>
-            <li><a href="{{ route('shop')}}">Shop</a></li>
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="{{ route('contact')}}">Contact</a></li>
+            <li><a href="{{ route('shop')}}">{{__('website/home.Shop')}}</a></li>
+            <li><a href="#">{{__('website/home.Catalogs')}}</a></li>
+            <li><a href="#">{{__('website/home.New Arrivals')}}</a></li>
+            <li><a href="{{ route('contact')}}">{{__('website/home.Contact')}}</a></li>
           </ul>
         </div>
       </nav>

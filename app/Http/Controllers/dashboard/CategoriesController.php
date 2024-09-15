@@ -29,7 +29,7 @@ class CategoriesController extends Controller
     {
           $category=Category::find($id);   // model name
           if($category== null){
-            return redirect()->route('dashboard.pages.categories.error.page-404');
+            return view('dashboard.pages.categories.error.page-404');
           }
           return view('dashboard.pages.categories.show',compact('category'));
     }

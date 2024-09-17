@@ -10,4 +10,8 @@ class ProductsController extends Controller
     public function shop(){
         return view('website.pages.products.shop');
     }
+
+    public function shopsingle(){
+        return view('website.pages.products.shop-single');
+    }
 }

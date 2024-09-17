@@ -51,10 +51,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Tank Top</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Tank Top</a></h3>
                     <p class="mb-0">Finding perfect t-shirt</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -63,10 +63,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Corater</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -75,10 +75,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Polo Shirt</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -88,10 +88,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_3.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_3.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
+                    <h3><a href="{{route('shop.single')}}">T-Shirt Mockup</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -100,10 +100,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Corater</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -112,10 +112,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Tank Top</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Tank Top</a></h3>
                     <p class="mb-0">Finding perfect t-shirt</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -124,10 +124,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Corater</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -136,10 +136,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Polo Shirt</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -149,10 +149,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_3.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_3.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
+                    <h3><a href="{{route('shop.single')}}">T-Shirt Mockup</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -161,10 +161,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Corater</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -173,10 +173,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Tank Top</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Tank Top</a></h3>
                     <p class="mb-0">Finding perfect t-shirt</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -186,10 +186,10 @@
               <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                 <div class="block-4 text-center border">
                   <figure class="block-4-image">
-                    <a href="shop-single.html"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
+                    <a href="{{route('shop.single')}}"><img src="{{asset('assets/images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid"></a>
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                    <h3><a href="{{route('shop.single')}}">Polo Shirt</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
